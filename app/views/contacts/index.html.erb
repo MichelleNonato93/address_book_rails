@@ -19,7 +19,7 @@
         <td><%= contact.first_name %></td>
         <td><%= contact.last_name %></td>
         <td><%= contact.address %></td>
-        <td><%= contact.image %></td>
+        <td><%= image_tag contact.image_url(:thumb) if contact.image? %></td>
         <td><%= contact.email %></td>
         <td><%= contact.phone %></td>
         <td><%= link_to 'Show', contact %></td>
