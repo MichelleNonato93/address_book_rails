@@ -18,6 +18,7 @@
 <p>
   <strong>Image:</strong>
   <%= @contact.image %>
+  <%= image_tag(@contact.image_url, :width => 600) if @contact.image.present? %>
 </p>
 
 <p>
